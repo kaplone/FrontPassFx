@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane prefHeight="785.0" prefWidth="1183.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.acelys.frontpassfx.HelloController">
+   <top>
+      <HBox prefHeight="63.0" prefWidth="1183.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="51.0" prefWidth="371.0" spacing="5.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label minWidth="45.0" text="Count" />
+                        <TextField fx:id="count" />
+                        <Button fx:id="reload" mnemonicParsing="false" text="Reload" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="215.0" spacing="10.0">
+                     <children>
+                        <Label minWidth="45.0" text="Length" />
+                        <TextField fx:id="length" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="pass_in" prefHeight="702.0" prefWidth="395.0" />
+            <ListView fx:id="pass_out" prefHeight="702.0" prefWidth="720.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </center>
+</BorderPane>
